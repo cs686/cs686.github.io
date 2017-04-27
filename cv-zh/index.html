@@ -16,23 +16,13 @@
 <body class="theme-default">
 <div class="wrapper" itemscope itemtype="http://schema.org/Person">
     <header class="page-header">
-        <!-- You can turn off the avatar in _config.yml by setting to false -->
-
         <img src="/css/images/header.jpeg" alt="my photo" class="avatar no-print" itemprop="image">
-
-
-        <!-- Your name is defined in the _config.yml file -->
         <h1 class="header-name" itemprop="name">种松松</h1>
-
-        <!-- Contact buttons don't work in print, configure in the _config.yml file, remove "print-only" to display always. -->
         <div class="header-contact-info" itemprop="contact-info">
             <p>北京市 立水桥 | 17600108903 | cs686@126.com | wechat:chongsongsong</p>
         </div>
         <div class="title-bar no-print">
-            <!-- Your title is also defined in the _config.yml file -->
             <h2 class="header-title" itemprop="jobTitle">PHP开发工程师/前端开发工程师</h2>
-            <!-- This is the markup for the icon links; moved out to an include because it's very verbose, and you shouldn't ever need to edit the markup (unless you want to re-order the icons); if you want to customize which links appear, define them in the _config.yml file -->
-            <!-- and guess where these are defined? Yup, you guessed it: the _config.yml file -->
             <ul class="icon-links">
                 <!-- GitHub link -->
                 <li class="icon-link-item">
@@ -67,43 +57,45 @@
         </div>
         <a href="mailto:cs686@126.com" class="contact-button no-print" itemprop="email">联系我</a>
     </header>
-
-    <!-- begin Associations -->
     <section class="content-section">
-
         <header class="section-header">
-            <h2>编程熟练度</h2>
+            <h2>掌握技能</h2>
         </header>
-
         <div class="resume-item">
-            <h4 class="resume-item-details">开发语言</h4>
+            <h4 class="resume-item-details">后端技能</h4>
             <ul class="resume-item-list">
-                <li>PHP 掌握</li>
-                <li>Nodejs 掌握</li>
-                <li>HTML CSS JS 掌握</li>
-                <li>Mysql Git 掌握</li>
-                <li>Go Python 了解</li>
-                <li>Linux&shell Nginx Docker了解</li>
+                <li>掌握PHP开发，掌握面向对象开发，理解MVC原理，了解大型网站结构，目前使用Laravel框架开发</li>
+                <li>精通MySQL，掌握数据库分表分库集群等设计方法,理解数据库事务,及分布式服务的基本原理</li>
+                <li>熟练使用面向对象开发中的S.O.L.I.D.原则</li>
+                <li>掌握MYSQL数据库设计，及相关优化,对高并发有相关开发经验</li>
+                <li>了解Web开发相关技术，理解HTTP协议及TCP/IP协议，了解web安全的相关知识</li>
+                <li>掌握Linux基本操作、Nginx服务器配置，熟悉主流NoSql</li>
+                <li>掌握Restfull API开发的基本流程，掌握OAuth2及JWT开发</li>
+                <li>做过GoWeb相关开发及Python数据分析</li>
             </ul>
         </div>
-
         <div class="resume-item">
-            <h4 class="resume-item-details">常用框架</h4>
+            <h4 class="resume-item-details">前端技能</h4>
             <ul class="resume-item-list">
-                <li>Laravel Thinkphp (PHP)</li>
-                <li>Koa Express (Nodejs)</li>
-                <li>Vue jQuery(js)</li>
+                <li>熟练使用HTML+CSS+JS开发，并掌握Bootstrap框架及Sass/jQuery等工具库</li>
+                <li>掌握前端工程化流程，能够熟练使用Webpack前端构建工具</li>
+                <li>掌握前端组件化开发思想，对MVVM框架能够熟练使用，目前开发使用Vuejs</li>
+                <li>了解ES6语法</li>
             </ul>
         </div>
-
+        <div class="resume-item">
+            <h4 class="resume-item-details">基本技能</h4>
+            <ul class="resume-item-list">
+                <li>可以无障碍阅读英文文档</li>
+                <li>理解常用的数据结构及算法</li>
+            </ul>
+        </div>
     </section>
-    <!-- begin Experience -->
     <section class="content-section">
         <header class="section-header">
             <h2>工作经历</h2>
         </header>
 
-        <!-- Duplicate these resume-item elements and edit accordingly for each job you want to add here -->
         <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
             <h3 class="resume-item-title" itemprop="name">北京五味俱全信息技术有限公司</h3>
             <h4 class="resume-item-details" itemprop="description">PHP开发工程师 &bull; 2016年 &mdash;
@@ -113,21 +105,15 @@
                 <li>快速迭代</li>
                 <li>前瞻</li>
             </ul>
-        </div><!-- end of resume-item -->
+        </div>
 
-        <!-- another resume item -->
         <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
             <h3 class="resume-item-title" itemprop="name">济南二机床集团有限公司</h3>
             <h4 class="resume-item-details" itemprop="description">服务运维及PHP网页开发 &bull; 2011年10月 &mdash;
                 2015年12月</h4>
             <p class="resume-item-copy">主要负责公司网站运维，内部生产管理系统的开发，mysql数据库设计维护。</p>
-        </div><!-- end of resume-item -->
-
+        </div>
     </section>
-    <!-- end Experience -->
-
-
-    <!-- begin Education -->
     <section class="content-section">
         <header class="section-header">
             <h2>教育经历</h2>
@@ -137,12 +123,11 @@
             <h4 class="resume-item-details" itemprop="description">学士学位, 控制工程 &bull;2007 &mdash; 2011</h4>
         </div>
     </section>
-    <!-- end Education -->
-    <!-- begin Projects -->
     <section class="content-section">
         <header class="section-header">
             <h2>项目经验</h2>
         </header>
+
         <div class="resume-item">
             <h3 class="resume-item-title">基于微信的喜鹊窝活动平台搭建及后台管理</h3>
             <h4 class="resume-item-details">独立完成 &bull; 2016年10月 &mdash; 2017年1月</h4>
@@ -160,9 +145,25 @@
         </div>
 
         <div class="resume-item">
-            <h3 class="resume-item-title">百度、美团、饿了么三大外卖平台接单对接</h3>
-            <h4 class="resume-item-details">独立完成 &bull; 2016年5月 &mdash; 2016年11月</h4>
-            <h4 class="resume-item-details">开发技术栈 ： 前端 HTML CSS Jquery Vuejs 后端：thrift接口，PHP+MYSQL 框架：Laravel</h4>
+            <h3 class="resume-item-title">基于微信的喜鹊窝活动平台搭建及后台管理</h3>
+            <h4 class="resume-item-details">独立完成 &bull; 2016年10月 &mdash; 2017年1月</h4>
+            <h4 class="resume-item-details">开发技术栈 ： 前端 HTML CSS Vuejs 后端：thrift接口，PHP+MYSQL 框架：Laravel</h4>
+            <p class="resume-item-copy">项目简介:该项目为公司进行各类餐饮活动传播的工具，基于微信公众号建设，包括活动发布、统计、传播分成等</p>
+            <p class="resume-item-copy">技术要点:</p>
+            <ul class="resume-item-list">
+                <li>微信开发者平台配置，微信消息推送，微信支付，商户付款开发</li>
+                <li>活动页面交互设计，及传播分成的计算（个人分成及公司分成）</li>
+                <li>手机屏幕的适配及兼容性处理</li>
+                <li>后台管理页面采用Vuejs，组件化的设计提高页面性能</li>
+                <li>数据库设计</li>
+                <li>thrift接口使用</li>
+            </ul>
+        </div>
+
+        <div class="resume-item">
+            <h3 class="resume-item-title">百度、美团、饿了么三大外卖平台接单对接手机端接口开发</h3>
+            <h4 class="resume-item-details">后端开发独立完成，前端IOS &bull; 2016年5月 &mdash; 2016年11月</h4>
+            <h4 class="resume-item-details">涉及技术：thrift接口，PHP+MYSQL ，Restfull API开发 Laravel Vuejs</h4>
             <p class="resume-item-copy">项目简介:该项目为公司百度、美团、饿了么三大外卖平台接单对接项目，包括订单轮询订单提醒，接单，退单，打印硬件设备开发，API接口开发供ipad端展示使用，外卖店铺管理平台开发</p>
             <p class="resume-item-copy">技术要点:</p>
             <ul class="resume-item-list">
@@ -246,42 +247,7 @@
 
 
     <!-- begin Skills -->
-    <section class="content-section">
 
-        <header class="section-header">
-            <h2>掌握技能</h2>
-        </header>
-
-        <div class="resume-item">
-            <h4 class="resume-item-details">基本技能</h4>
-            <ul class="resume-item-list">
-                <li>可以无障碍阅读英文文档</li>
-                <li>较强的学习能力，可以很快适应并使用新技术</li>
-            </ul>
-        </div>
-        <div class="resume-item">
-            <h4 class="resume-item-details">前端技能</h4>
-            <ul class="resume-item-list">
-                <li>熟练使用HTML+CSS+JS开发，并掌握Bootstrap框架及Sass/jQuery等工具库</li>
-                <li>掌握前端工程化流程，能够熟练使用Webpack/Gulp等前端构建工具</li>
-                <li>了解前端组件化开发思想，对MVVM框架能够熟练使用，目前开发使用Vuejs，有自己独立开发的组件库</li>
-                <li>了解ES6语法</li>
-            </ul>
-        </div>
-
-        <div class="resume-item">
-            <h4 class="resume-item-details">后端技能</h4>
-            <ul class="resume-item-list">
-                <li>掌握PHP开发，掌握面向对象开发，目前使用Laravel框架开发</li>
-                <li>掌握使用Nodejs开发后端，目前使用Koa2参与开发</li>
-                <li>掌握PHP开发MVC模型,熟练使用面向对象开发中的S.O.L.I.D.原则</li>
-                <li>掌握MYSQL数据库设计，熟练使用sql语句查询</li>
-                <li>熟悉Restful API开发规范</li>
-                <li>掌握Linux基本操作，熟悉Redis缓存技术</li>
-                <li>掌握Nginx服务器配置，可使用docker</li>
-            </ul>
-        </div>
-    </section>
 </div>
 </body>
 </html>
