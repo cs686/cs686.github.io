@@ -6,8 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Chong's 个人简历|web developer - Beijing</title>
-    <!-- Google font typography settings - defined in _config.yml -->
-    <link href='https://fonts.googleapis.com/css?family=Lora:400,700|Open+Sans:400,300,800,700' rel='stylesheet' type='text/css'>
+    <!--<link href='https://fonts.googleapis.com/css?family=Lora:400,700|Open+Sans:400,300,800,700' rel='stylesheet' type='text/css'>-->
     <meta name="description" content="Chong's Resume|web developer.">
     <link rel="stylesheet" href="/css/main.css">
     <link rel="canonical" href="http://resume-template.joelglovier.com/">
@@ -64,14 +63,15 @@
         <div class="resume-item">
             <h4 class="resume-item-details">后端技能</h4>
             <ul class="resume-item-list">
-                <li>掌握PHP开发，掌握面向对象开发，理解MVC原理，了解大型网站结构，目前使用Laravel框架开发</li>
-                <li>精通MySQL，掌握数据库分表分库集群等设计方法,理解数据库事务,及分布式服务的基本原理</li>
+                <li>掌握PHP开发，掌握面向对象开发，理解MVC原理，了解大型网站缓存以及优化技术，目前使用Laravel框架开发</li>
+                <li>有C/C++开发经验，理解PHP的实现以及底层原理</li>
+                <li>掌握数据库分表分库集群等设计方法,理解数据库事务,及分布式服务的基本原理</li>
                 <li>熟练使用面向对象开发中的S.O.L.I.D.原则</li>
                 <li>掌握MYSQL数据库设计，及相关优化,对高并发有相关开发经验</li>
                 <li>了解Web开发相关技术，理解HTTP协议及TCP/IP协议，了解web安全的相关知识</li>
                 <li>掌握Linux基本操作、Nginx服务器配置，熟悉主流NoSql</li>
                 <li>掌握Restfull API开发的基本流程，掌握OAuth2及JWT开发</li>
-                <li>做过GoWeb相关开发及Python数据分析</li>
+                <li>熟练使用composer管理工具，目前已开发多个独立开发包可以使用</li>
             </ul>
         </div>
         <div class="resume-item">
@@ -79,8 +79,15 @@
             <ul class="resume-item-list">
                 <li>熟练使用HTML+CSS+JS开发，并掌握Bootstrap框架及Sass/jQuery等工具库</li>
                 <li>掌握前端工程化流程，能够熟练使用Webpack前端构建工具</li>
-                <li>掌握前端组件化开发思想，对MVVM框架能够熟练使用，目前开发使用Vuejs</li>
+                <li>掌握前端组件化开发思想，对MVVM框架能够熟练使用，可熟练使用ReactJs和VueJs</li>
+                <li>做过Node相关服务的开发</li>
                 <li>了解ES6语法</li>
+            </ul>
+        </div>
+        <div class="resume-item">
+            <h4 class="resume-item-details">团队管理</h4>
+            <ul class="resume-item-list">
+                <li>目前为公司PHP开发负责人，负责团队项目进度任务分配</li>
             </ul>
         </div>
         <div class="resume-item">
@@ -127,22 +134,40 @@
         <header class="section-header">
             <h2>项目经验</h2>
         </header>
-
         <div class="resume-item">
-            <h3 class="resume-item-title">基于微信的喜鹊窝活动平台搭建及后台管理</h3>
-            <h4 class="resume-item-details">独立完成 &bull; 2016年10月 &mdash; 2017年1月</h4>
-            <h4 class="resume-item-details">开发技术栈 ： 前端 HTML CSS Vuejs 后端：thrift接口，PHP+MYSQL 框架：Laravel</h4>
-            <p class="resume-item-copy">项目简介:该项目为公司进行各类餐饮活动传播的工具，基于微信公众号建设，包括活动发布、统计、传播分成等</p>
+            <h3 class="resume-item-title">基于餐饮Sass数据挖掘分析</h3>
+            <h4 class="resume-item-details">三人开发担任项目组长 &bull; 2017年4月 &mdash; 至今</h4>
+            <h4 class="resume-item-details">开发技术栈 ： 前端 HTML CSS Vuejs HighCharts Threejs 后端：PHP+MYSQL 框架：Laravel</h4>
+            <p class="resume-item-copy">项目简介:公司内的餐饮基于Sass构建的云平台，经过四年多的发展公司目前公司积累了大量的餐饮数据，包括商户的经营情况、个人消费情况以及货物供销的大量数据，并通过数据挖掘，数据分类与预测、数据关联、偏差等方法预测客户菜品的价值以及对用户应该发放怎样的优惠，从而达到降低运营成本增加盈利实现精准营销的目的</p>
             <p class="resume-item-copy">技术要点:</p>
             <ul class="resume-item-list">
-                <li>微信开发者平台配置，微信消息推送，微信支付，商户付款开发</li>
-                <li>活动页面交互设计，及传播分成的计算（个人分成及公司分成）</li>
-                <li>手机屏幕的适配及兼容性处理</li>
-                <li>后台管理页面采用Vuejs，组件化的设计提高页面性能</li>
-                <li>数据库设计</li>
-                <li>thrift接口使用</li>
+                <li>数据库的设计优化，由于数据量大采用分表分库的设计原则分成店铺相关、顾客相关、菜品相关的数据库</li>
+                <li>前期数据处理：通过对数据清洗获取符合正态分布的数据，通过Apriori算法获取某个用户在某一个店铺下最近的相关性关系，预测某人消费习惯。并通过KNN及SVC对人群店铺分类</li>
+                <li>Linux定时任务的设定：包括合理调整数据获取分配时间，定时数据分析</li>
+                <li>用户发券算法的设计，通过用户消费频次对用户活跃程度判断，以及用户间的相关性关系对用户发放微信卡券</li>
+                <li>由于数据较多对每次查询结果redis数据缓存，提高访问效率</li>
+                <li>规范Restfull API开发，对参数以及返回数据规范</li>
+                <li>前端使用Vuejs开发增加开发效率，采用js分段加载技术加快数据读取</li>
             </ul>
         </div>
+
+        <div class="resume-item">
+            <h3 class="resume-item-title">基于点菜宝系统基站数据获取以及点菜宝替代产品的开发</h3>
+            <h4 class="resume-item-details">三人开发担任项目组长 &bull; 2017年1月 &mdash; 2017年4月</h4>
+            <h4 class="resume-item-details">开发技术栈 ： 前端 HTML CSS Vuejs 小程序 Android 后端：C++ PHP+MYSQL 框架：Laravel</h4>
+            <p class="resume-item-copy">项目简介:目前市面上多数餐厅仍在使用老一代的点菜宝，功能较为单一，而且点菜宝基站的价值较高增加餐厅成本，通过对点菜宝基站频道数据的获取并保存到云服务器，实现用户手机自助点餐，并对数据统计管理</p>
+            <p class="resume-item-copy">技术要点:</p>
+            <ul class="resume-item-list">
+                <li>数据库的设计此项目涉及订单支付、商户管理、点菜宝配置、用户管理等</li>
+                <li>对接扫码盒子以及微信支付，并对订单支付轮询对采用消息队列通知用户支付情况</li>
+                <li>基站数据的获取</li>
+                <li>后端配置平台的页面开发</li>
+                <li>小程序API接口的开发，通过JWT对接口安全控制，并通过签名规则保证数据传输的准确防止被滥用</li>
+                <li>前端点餐页面数据的缓存</li>
+            </ul>
+        </div>
+
+
 
         <div class="resume-item">
             <h3 class="resume-item-title">基于微信的喜鹊窝活动平台搭建及后台管理</h3>
@@ -243,10 +268,6 @@
             </ul>
         </div>
     </section>
-    <!-- end Projects -->
-
-
-    <!-- begin Skills -->
 
 </div>
 </body>
