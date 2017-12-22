@@ -1,38 +1,10 @@
-var cacheName = "pwahello"
-self.addEventListener('install', event => {
-    event.waitUntil(
-        caches.open(cacheName).then(cache => cache.addAll([
-            '../js/main.js',
-            '../images/test.jpg'
-        ]))
-    )
-})
+importScripts('../node_modules/sw-toolbox/sw-toolbox.js')
 
-// Cache any new resources as they are fetched
-self.addEventListener('fetch', function(event) {
-    event.respondWith(
-        caches.match(event.request, { ignoreSearch: true })
-        .then(function(response) {
-            if (response) {
-                return response;
-            }
-            var fetchRequest = event.request.clone();
+toolbox.options.cache.name = 'sw-toolbox-cache';
 
-            return fetch(fetchRequest).then(
-                function(response) {
-                    if (!response || response.status !== 200) {
-                        return response;
-                    }
+toolbox.precache(['./caching.html', './offline/index.html']);
 
-                    var responseToCache = response.clone();
-                    caches.open(cacheName)
-                        .then(function(cache) {
-                            cache.put(event.request, responseToCache);
-                        });
+toolbox.router.default = toolbox.fastest;
 
-                    return response;
-                }
-            );
-        })
-    );
-});
+// Below router means to load data from cache only while navigating to offline.
+toolbox.router.get('/offline/.*', toolbox.cacheOnly);
