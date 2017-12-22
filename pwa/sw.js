@@ -1,4 +1,4 @@
-importScripts('../node_modules/sw-toolbox/sw-toolbox.js')
+importScripts('../js/sw-toolbox/sw-toolbox.js')
 
 toolbox.options.cache.name = 'sw-toolbox-cache';
 
