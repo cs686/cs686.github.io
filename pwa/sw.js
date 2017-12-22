@@ -9,7 +9,7 @@ self.addEventListener('install', event => {
 })
 
 self.addEventListener('fetch', function(event) {
-    event.responseWith(
+    event.respondWith(
         caches.match(event.request)
         .then(function(response) {
             if (Response) {
