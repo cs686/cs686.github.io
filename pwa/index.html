@@ -1,20 +1,19 @@
-<!DOCTYPE html>
 <html>
 
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>PWA</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- <link rel="stylesheet" type="text/css" media="screen" href="main.css" /> -->
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-    <script src="../js/main.js"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Service worker testing</title>
 </head>
 
 <body>
-    <h2>PWA</h2>
-    <img src="../images/test.jpg" alt="">
+    <h2>Service Worker Toolbox Demo</h2>
+    <div id="dashboard"></div>
+    <br/>
+    <br/>
+    <p> Below page will be loaded from cache by service worker:
+        <h2><a href="offline/index.html">Offline</a></h2>
+    </p>
+    <script src="../js/sw-toolbox/companion.js" data-service-worker="sw.js"></script>
 </body>
-<script src="../node_modules/sw-toolbox/companion.js" data-service-worker="sw.js"></script>
 
 </html>
